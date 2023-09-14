@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <!--实现自动装配，bean标签的属性autowire
+        autowire属性的两个常用值，byName,byType-->
+    <bean id="emp2" class="com.company.spring5.autowire.Emp2" autowire="byType"></bean>
+    <bean id="dept2" class="com.company.spring5.autowire.Dept2"></bean>
+</beans>
