@@ -1,7 +1,7 @@
 package com.company.spring5;
 
 public class Orders {
-    private String oname;
+    private final String oname;
 
     public Orders(String oname) {
         this.oname = oname;
