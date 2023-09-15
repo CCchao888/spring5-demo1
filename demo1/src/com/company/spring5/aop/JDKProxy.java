@@ -5,6 +5,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Arrays;
 
+//proxy的底层源码
+
 public class JDKProxy {
     public static void main(String[] args) {
         //创建接口实现类代理对象
