@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(noRollbackFor = {NoSuchFieldError.class},timeout = -1,readOnly = false,propagation = Propagation.REQUIRED,isolation = Isolation.REPEATABLE_READ)
 public class UserService {
     @Autowired
+    //@Qualifier(value = "userDao")
     private UserDao userDao;
 
     //转账业务方法
@@ -20,7 +21,7 @@ public class UserService {
 
             userDao.reduceMoney();
             //模拟异常
-            int i=10/0;
+           // int i=10/0;
 
             userDao.addMoney();
 

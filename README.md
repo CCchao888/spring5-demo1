@@ -65,5 +65,6 @@ try{
 - rollBackFor回滚：设置出现哪些异常进行事务回滚。
 - noRollBackFor不回滚：设置出现哪些异常不进行事务回滚。
 8. 完全注解声明式事务管理
-- 
+9. Spring5框架核心容器支持@Nullable注解：表示方法、属性等可为空
+10. Spring5框架核心容器支持函数式风格GenericApplicationContext
 
